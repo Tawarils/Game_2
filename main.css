@@ -26,6 +26,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  transition: 1.5s ease-out;
 }
 
 .main-menu-head {
@@ -51,4 +53,56 @@ body {
 .main-menu-btt:active {
   background-color: chocolate;
   transition: 0s;
+}
+
+/* GAME WINDOW */
+.game-window {
+  width: 500px;
+  height: 400px;
+  background-color: rgb(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(4px);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: 1.5s ease-out;
+}
+.game-deskr {
+  font-weight: 800;
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+.game-btt-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+.game-btt {
+  width: 114px;
+  height: 35px;
+  font-weight: 800;
+  background-color: rgb(85, 85, 85);
+  border-radius: 5px;
+  transition: 0.8s ease-out;
+  margin-bottom: 5%;
+}
+
+.game-btt:hover {
+  background-color: rgb(30, 30, 30);
+  transition: 0.8s ease-out;
+}
+
+.game-btt:active {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  transition: 0.3s;
+}
+
+.game-result {
+  font-weight: 600;
+  font-size: 17px;
 }
