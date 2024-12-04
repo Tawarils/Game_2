@@ -40,7 +40,15 @@ body {
   font-weight: 800;
   background-color: rgb(0, 0, 0, 0.4);
   border-radius: 5px;
+  transition: 0.8s ease-out;
 }
 
-.main-menu-btt {
+.main-menu-btt:hover {
+  background-color: rgb(0, 0, 0, 0.7);
+  transition: 0.8s ease-out;
+}
+
+.main-menu-btt:active {
+  background-color: chocolate;
+  transition: 0s;
 }
